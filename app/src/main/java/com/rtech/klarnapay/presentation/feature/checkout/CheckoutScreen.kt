@@ -1,4 +1,4 @@
-package com.rtech.klarnapay.presentation
+package com.rtech.klarnapay.presentation.feature.checkout
 
 
 import android.os.Handler
@@ -10,11 +10,9 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -64,9 +62,9 @@ import coil.compose.AsyncImage
 import com.klarna.mobile.sdk.api.payments.KlarnaPaymentView
 import com.klarna.mobile.sdk.api.payments.KlarnaPaymentViewCallback
 import com.klarna.mobile.sdk.api.payments.KlarnaPaymentsSDKError
-import com.klarna.mobile.sdk.payments.KlarnaPaymentsSDK
-import com.rtech.klarnapay.domain.Order
-import com.rtech.klarnapay.domain.PaymentMethodCategory
+import com.rtech.klarnapay.domain.model.Order
+import com.rtech.klarnapay.domain.model.PaymentMethodCategory
+import com.rtech.klarnapay.presentation.feature.products.KlarnaPink
 import org.koin.androidx.compose.koinViewModel
 import org.koin.core.parameter.parametersOf
 

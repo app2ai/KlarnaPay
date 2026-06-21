@@ -1,6 +1,5 @@
-package com.rtech.klarnapay.presentation
+package com.rtech.klarnapay.presentation.feature.confirmation
 
-import com.rtech.klarnapay.domain.Order
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -13,6 +12,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.rtech.klarnapay.domain.model.Order
+import com.rtech.klarnapay.presentation.feature.products.KlarnaPink
 
 /**
  * Simple confirmation screen shown after a successful Klarna order.

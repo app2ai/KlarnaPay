@@ -1,4 +1,6 @@
-package com.rtech.klarnapay.domain
+package com.rtech.klarnapay.domain.repo
+
+import com.rtech.klarnapay.domain.model.Product
 
 /**
  * Repository interface for the product catalogue.

@@ -1,5 +1,9 @@
-package com.rtech.klarnapay.data.remote
+package com.rtech.klarnapay.data.remote.service
 
+import com.rtech.klarnapay.data.remote.dto.CreateOrderRequestDto
+import com.rtech.klarnapay.data.remote.dto.CreateOrderResponseDto
+import com.rtech.klarnapay.data.remote.dto.CreateSessionRequestDto
+import com.rtech.klarnapay.data.remote.dto.CreateSessionResponseDto
 import retrofit2.http.Body
 import retrofit2.http.POST
 

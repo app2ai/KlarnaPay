@@ -1,15 +1,15 @@
 package com.rtech.klarnapay.di
 
 import com.rtech.klarnapay.BuildConfig
-import com.rtech.klarnapay.data.remote.KlarnaBackendApi
+import com.rtech.klarnapay.data.remote.service.KlarnaBackendApi
 import com.rtech.klarnapay.data.repo.PaymentRepositoryImpl
 import com.rtech.klarnapay.data.repo.ProductRepositoryImpl
 import com.rtech.klarnapay.domain.CreateOrderUseCase
 import com.rtech.klarnapay.domain.CreatePaymentSessionUseCase
 import com.rtech.klarnapay.domain.GetProductByIdUseCase
 import com.rtech.klarnapay.domain.GetProductsUseCase
-import com.rtech.klarnapay.domain.PaymentRepository
-import com.rtech.klarnapay.domain.ProductRepository
+import com.rtech.klarnapay.domain.repo.PaymentRepository
+import com.rtech.klarnapay.domain.repo.ProductRepository
 import com.rtech.klarnapay.presentation.CheckoutViewModel
 import com.rtech.klarnapay.presentation.ProductsViewModel
 import okhttp3.OkHttpClient

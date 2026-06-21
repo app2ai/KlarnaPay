@@ -1,37 +1,16 @@
-package com.rtech.klarnapay.presentation
+package com.rtech.klarnapay.presentation.feature.products
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.rtech.klarnapay.domain.GetProductsUseCase
-import com.rtech.klarnapay.domain.Product
+import com.rtech.klarnapay.domain.model.Product
+import com.rtech.klarnapay.domain.usecase.GetProductsUseCase
+import com.rtech.klarnapay.presentation.ProductsIntent
+import com.rtech.klarnapay.presentation.ProductsState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-
-// ─────────────────────────────────────────────
-// MVI Contract
-// ─────────────────────────────────────────────
-
-/** All actions the user can trigger on the Products screen. */
-sealed interface ProductsIntent {
-    data object LoadProducts : ProductsIntent
-    data class SelectProduct(val product: Product) : ProductsIntent
-    data object DismissError : ProductsIntent
-}
-
-/** Immutable UI state snapshot. */
-data class ProductsState(
-    val isLoading: Boolean = false,
-    val products: List<Product> = emptyList(),
-    val error: String? = null,
-    val navigateToCheckout: String? = null   // product ID to navigate to
-)
-
-// ─────────────────────────────────────────────
-// ViewModel
-// ─────────────────────────────────────────────
 
 class ProductsViewModel(
     private val getProductsUseCase: GetProductsUseCase

@@ -1,23 +1,23 @@
-package com.rtech.klarnapay.presentation
+package com.rtech.klarnapay.presentation.feature.products
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil.compose.AsyncImage
-import com.rtech.klarnapay.domain.Product
+import com.rtech.klarnapay.domain.model.Product
 import org.koin.androidx.compose.koinViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -180,7 +180,7 @@ private fun ProductCard(
                         Text(
                             text  = "Buy",
                             style = MaterialTheme.typography.labelMedium,
-                            color = androidx.compose.ui.graphics.Color.Black
+                            color = Color.Black
                         )
                     }
                 }
@@ -206,4 +206,4 @@ private fun ErrorView(
 }
 
 // Klarna brand pink
-val KlarnaPink = androidx.compose.ui.graphics.Color(0xFFFFB3C7)
+val KlarnaPink = Color(0xFFFFB3C7)

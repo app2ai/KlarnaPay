@@ -6,10 +6,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.rtech.klarnapay.domain.Order
-import com.rtech.klarnapay.presentation.CheckoutScreen
-import com.rtech.klarnapay.presentation.ConfirmationScreen
-import com.rtech.klarnapay.presentation.ProductsScreen
+import com.rtech.klarnapay.domain.model.Order
+import com.rtech.klarnapay.presentation.feature.checkout.CheckoutScreen
+import com.rtech.klarnapay.presentation.feature.confirmation.ConfirmationScreen
+import com.rtech.klarnapay.presentation.feature.products.ProductsScreen
 
 // ── Route constants ───────────────────────────────────────────────────────────
 private object Routes {

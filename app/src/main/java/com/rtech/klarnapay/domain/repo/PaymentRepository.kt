@@ -1,4 +1,9 @@
-package com.rtech.klarnapay.domain
+package com.rtech.klarnapay.domain.repo
+
+import com.rtech.klarnapay.domain.model.CreateOrderRequest
+import com.rtech.klarnapay.domain.model.CreateSessionRequest
+import com.rtech.klarnapay.domain.model.Order
+import com.rtech.klarnapay.domain.model.PaymentSession
 
 /**
  * Repository interface (port) — the domain layer depends only on this abstraction.
@@ -12,7 +17,7 @@ interface PaymentRepository {
 
     /**
      * Creates a Klarna payment session on the backend.
-     * Returns a [PaymentSession] containing the clientToken for the SDK.
+     * Returns a [com.rtech.klarnapay.domain.model.PaymentSession] containing the clientToken for the SDK.
      */
     suspend fun createSession(request: CreateSessionRequest): Result<PaymentSession>
 

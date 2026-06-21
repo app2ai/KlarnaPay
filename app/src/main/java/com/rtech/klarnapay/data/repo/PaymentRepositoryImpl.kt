@@ -1,14 +1,14 @@
 package com.rtech.klarnapay.data.repo
 
-import com.rtech.klarnapay.data.remote.CreateOrderRequestDto
-import com.rtech.klarnapay.data.remote.CreateSessionRequestDto
-import com.rtech.klarnapay.data.remote.KlarnaBackendApi
-import com.rtech.klarnapay.data.remote.OrderLineDto
+import com.rtech.klarnapay.data.remote.dto.CreateOrderRequestDto
+import com.rtech.klarnapay.data.remote.dto.CreateSessionRequestDto
+import com.rtech.klarnapay.data.remote.dto.OrderLineDto
+import com.rtech.klarnapay.data.remote.service.KlarnaBackendApi
 import com.rtech.klarnapay.domain.CreateOrderRequest
 import com.rtech.klarnapay.domain.CreateSessionRequest
 import com.rtech.klarnapay.domain.Order
 import com.rtech.klarnapay.domain.PaymentMethodCategory
-import com.rtech.klarnapay.domain.PaymentRepository
+import com.rtech.klarnapay.domain.repo.PaymentRepository
 import com.rtech.klarnapay.domain.PaymentSession
 
 /**
