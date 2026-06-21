@@ -8,8 +8,6 @@ import com.rtech.klarnapay.domain.model.OrderLine
 import com.rtech.klarnapay.domain.usecase.CreateOrderUseCase
 import com.rtech.klarnapay.domain.usecase.CreatePaymentSessionUseCase
 import com.rtech.klarnapay.domain.usecase.GetProductByIdUseCase
-import com.rtech.klarnapay.presentation.CheckoutIntent
-import com.rtech.klarnapay.presentation.CheckoutState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

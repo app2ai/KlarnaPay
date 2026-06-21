@@ -1,6 +1,6 @@
 package com.rtech.klarnapay.data.repo
 
-import com.rtech.klarnapay.domain.Product
+import com.rtech.klarnapay.domain.model.Product
 import com.rtech.klarnapay.domain.repo.ProductRepository
 
 

@@ -4,8 +4,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.rtech.klarnapay.domain.model.Product
 import com.rtech.klarnapay.domain.usecase.GetProductsUseCase
-import com.rtech.klarnapay.presentation.ProductsIntent
-import com.rtech.klarnapay.presentation.ProductsState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

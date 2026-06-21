@@ -4,12 +4,12 @@ import com.rtech.klarnapay.data.remote.dto.CreateOrderRequestDto
 import com.rtech.klarnapay.data.remote.dto.CreateSessionRequestDto
 import com.rtech.klarnapay.data.remote.dto.OrderLineDto
 import com.rtech.klarnapay.data.remote.service.KlarnaBackendApi
-import com.rtech.klarnapay.domain.CreateOrderRequest
-import com.rtech.klarnapay.domain.CreateSessionRequest
-import com.rtech.klarnapay.domain.Order
-import com.rtech.klarnapay.domain.PaymentMethodCategory
+import com.rtech.klarnapay.domain.model.CreateOrderRequest
+import com.rtech.klarnapay.domain.model.CreateSessionRequest
+import com.rtech.klarnapay.domain.model.Order
+import com.rtech.klarnapay.domain.model.PaymentMethodCategory
+import com.rtech.klarnapay.domain.model.PaymentSession
 import com.rtech.klarnapay.domain.repo.PaymentRepository
-import com.rtech.klarnapay.domain.PaymentSession
 
 /**
  * Concrete implementation of [PaymentRepository].
